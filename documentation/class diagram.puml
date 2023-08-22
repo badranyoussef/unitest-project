@@ -5,7 +5,7 @@
 
 class Main
 class User
-class System
+class Application
 
 class User{
 -string password
@@ -16,13 +16,13 @@ class User{
 +String setUserName(String userName)
 }
 
-class System{
+class Application{
 -List <User> listOfUsers
 + void createUser(String password, String userName)
 + boolean passwordValidator(String password)
 }
 
-Main <-- System
-System <-- User
+Main <-- Application
+Application <-- User
 
 @enduml
