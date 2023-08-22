@@ -7,7 +7,7 @@ class ApplicationTest {
     void createUser() {
         Application mySys = new Application();
         User firstUser = new User("Henrik", "1234lpos");
-        assertEquals();
+        assertEquals("Henrik", firstUser.getUserName());
     }
 
     @Test
