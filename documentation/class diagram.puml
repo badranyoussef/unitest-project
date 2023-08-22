@@ -1,0 +1,28 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+
+class Main
+class User
+class System
+
+class User{
+-string password
+-string userName
+
++User(String password, String userName)
++String setPassword(String password)
++String setUserName(String userName)
+}
+
+class System{
+-List <User> listOfUsers
++ void createUser(String password, String userName)
++ boolean passwordValidator(String password)
+}
+
+Main <-- System
+System <-- User
+
+@enduml
