@@ -22,4 +22,8 @@ public class Application {
         }
         return false;
     }
+
+    public List<User> getListOfUsers() {
+        return listOfUsers;
+    }
 }
