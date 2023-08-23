@@ -6,7 +6,7 @@ class ApplicationTest {
     @Test
     void createUserTest() {
         Application mySys = new Application();
-        mySys.createUser("youssef","123456");
+        mySys.createUser("youssef","123456", true);
         assertEquals("youssef", mySys.getListOfUsers().get(0).getUserName());
         assertEquals(1, mySys.getListOfUsers().size());
     }

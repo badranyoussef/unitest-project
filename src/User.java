@@ -4,7 +4,7 @@ public class User {
     private String userName;
 
 
-    public User(String userName, String password){
+    public User(String userName, String password, boolean referred){
         this.userName = userName;
         this.password = password;
     }
