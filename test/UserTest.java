@@ -15,12 +15,14 @@ class UserTest {
 
     @Test
     void setPasswordTest(){
-        User user1 = new User("test","1111");
+        User user1 = new User("test","1111", true);
         user1.setPassword("111");
 
-        assertEquals("111",user1.getPassword());
+        assertEquals("1111",user1.getPassword());
+        assertEquals(500, user1.getAccountBalance());
 
     }
+
 
 
 }
