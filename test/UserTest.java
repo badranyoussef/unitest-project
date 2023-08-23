@@ -13,6 +13,14 @@ class UserTest {
         assertEquals("test",user1.getUserName());
     }
 
+    @Test
+    void setPasswordTest(){
+        User user1 = new User("test","1111");
+        user1.setPassword("111");
+
+        assertEquals("111",user1.getPassword());
+
+    }
 
 
 }
