@@ -4,7 +4,7 @@ public class Account {
 
 
     public void setBalance(double amount){
-
+        balance += amount;
     }
 
     public double getBalance(){

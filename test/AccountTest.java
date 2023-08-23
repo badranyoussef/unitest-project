@@ -16,4 +16,10 @@ class AccountTest {
 
         assertEquals(0,account.getBalance());
     }
+
+    @Test
+    void setBalance() {
+        account.setBalance(100);
+        assertEquals(100, account.getBalance());
+    }
 }

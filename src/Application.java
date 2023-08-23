@@ -6,10 +6,10 @@ public class Application {
     Application(){
         listOfUsers = this.listOfUsers;
     }
-    public void createUser(String userName, String password){
+    public void createUser(String userName, String password, boolean referred){
         boolean validation = passwordValidator(password);
         if(validation){
-            User newUser = new User(userName, password);
+            User newUser = new User(userName, password, referred);
             listOfUsers.add(newUser);
         }
         else{
